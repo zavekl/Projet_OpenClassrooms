@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/add_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/colorIconographyTypographyWhite"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textview1Add"
+                        android:layout_width="273dp"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/round_corner_button"
+                        android:backgroundTint="@color/colorPrimaryVariant"
+                        android:gravity="center"
+                        android:text="@string/create_a_meeting"
+                        android:textColor="@color/colorIconographyTypographyWhite"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:hint="@string/location"
+                        app:errorEnabled="true">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/filled_exposed_dropdown"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorIconographyTypographyWhite"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textSize="20sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:id="@+id/textinput2"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:gravity="center_vertical"
+                            android:backgroundTint="@color/colorIconographyTypographyWhite"
+                            android:inputType="time"
+                            android:layout_marginStart="35dp"
+                            android:maxLines="1"
+                            android:hint="@string/hour"
+                            android:singleLine="true"
+                            android:textSize="20sp" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:hint="@string/subject"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="40"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textinput3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorIconographyTypographyWhite"
+                            android:inputType="textEmailSubject"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textSize="20sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:hint="@string/list_of_people"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textinput4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorIconographyTypographyWhite"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textSize="20sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/addPeopleToAList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/add_one_person"/>
+
+                    <Button
+                        android:id="@+id/buttonAdd"
+                        android:layout_width="131dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:backgroundTint="@color/colorSecondary"
+                        android:text="@string/create"
+                        android:textColor="@color/colorIconographyTypographyWhite"
+                        android:textSize="22sp" />
+
+                    <Button
+                        android:id="@+id/backButton"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:backgroundTint="@color/colorIconographyTypographyBlack"
+                        android:gravity="center"
+                        android:text="@string/back"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

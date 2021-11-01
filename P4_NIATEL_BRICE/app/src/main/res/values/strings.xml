@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Ma réu</string>
+    <string name="tab_neighbour_title">Réunion</string>
+    <string name="sort_by_hour">Sort by hour</string>
+    <string name="sort_by_location">Sort by location</string>
+    <string name="create_a_meeting">Create a meeting</string>
+    <string name="location">Location</string>
+    <string name="hour">Hour</string>
+    <string name="subject">Subject</string>
+    <string name="list_of_people">List of people</string>
+    <string name="create">CREATE</string>
+    <string name="filter">Filter</string>
+    <string name="subject_of_meeting">The subject of the meeting is %1$s</string>
+    <string name="back">BACK</string>
+    <string name="empty_list">It\'s impossible, the list of meeting is empty</string>
+    <string name="empty_textView">It\'s impossible, there is no people to add at the meeting</string>
+    <string name="delete_the_item">Delete the item</string>
+    <string name="add_one_person">ADD ONE PERSON</string>
+    <string name="field_empty">Fiel\'d can\'t be empty</string>
+    <string name="subject_long">Subject too long</string>
+
+
+</resources>

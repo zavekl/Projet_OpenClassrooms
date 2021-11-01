@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/item_list_avatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_checkbox_blank_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/item_list_meeting1"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/colorIconographyTypographyBlack"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/item_list_avatar"
+        app:layout_constraintEnd_toStartOf="@+id/item_list_delete_button"
+        app:layout_constraintStart_toEndOf="@+id/item_list_avatar"
+        app:layout_constraintTop_toTopOf="@+id/item_list_avatar"
+        tools:text="Caroline" />
+
+
+    <TextView
+        android:id="@+id/item_list_meeting2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:singleLine="true"
+        android:textColor="@color/colorIconographyTypographyBlack"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/item_list_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/item_list_meeting1"
+        tools:text="Caroline" />
+
+    <ImageButton
+        android:id="@+id/item_list_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        android:contentDescription="@string/delete_the_item"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/item_list_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_list_avatar"
+        app:srcCompat="@drawable/ic_delete_black_24dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

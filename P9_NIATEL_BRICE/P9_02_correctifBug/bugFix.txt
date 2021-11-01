@@ -1,0 +1,28 @@
+commit d6ebe0ab88da166a77edf7308c8c2b4f28d6af07
+Author: Brice <andro.dev.work@gmail.com>
+Date:   Wed Dec 9 10:32:34 2020 +0100
+
+    bug fixes
+
+diff --git a/app/src/main/java/com/openclassrooms/realestatemanager/MainActivity.java b/app/src/main/java/com/openclassrooms/realestatemanager/MainActivity.java
+index eae4f5d..5220530 100644
+--- a/app/src/main/java/com/openclassrooms/realestatemanager/MainActivity.java
++++ b/app/src/main/java/com/openclassrooms/realestatemanager/MainActivity.java
+@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_main);
+ 
+-        this.textViewMain = findViewById(R.id.activity_second_activity_text_view_main);
++        this.textViewMain = findViewById(R.id.activity_main_activity_text_view_main);
+         this.textViewQuantity = findViewById(R.id.activity_main_activity_text_view_quantity);
+ 
+         this.configureTextViewMain();
+@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
+     }
+ 
+     private void configureTextViewQuantity(){
+-        int quantity = Utils.convertDollarToEuro(100);
++        String quantity = String.valueOf(Utils.convertDollarToEuro(100));
+         this.textViewQuantity.setTextSize(20);
+         this.textViewQuantity.setText(quantity);
+     }

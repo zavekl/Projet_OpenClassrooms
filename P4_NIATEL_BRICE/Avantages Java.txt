@@ -1,0 +1,3 @@
+De nos jours, le langage de programmation Java est plus facile d'apprentissage avec ses ressources plus importantes, c'est aussi donc un manque de compétence interne 
+aux entreprises qui peut se faire ressentir. Les développeurs Java sont donc plus faciles à trouver.
+Nous pouvons commencer un projet en Java et le finir en Kotlin plus tard, les deux langages peuvent être aussi utilisés en même temps.
